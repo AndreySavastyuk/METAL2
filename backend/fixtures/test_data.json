@@ -1,0 +1,71 @@
+[
+    {
+        "model": "auth.group",
+        "pk": 1,
+        "fields": {
+            "name": "Warehouse",
+            "permissions": []
+        }
+    },
+    {
+        "model": "auth.group", 
+        "pk": 2,
+        "fields": {
+            "name": "QC",
+            "permissions": []
+        }
+    },
+    {
+        "model": "auth.group",
+        "pk": 3, 
+        "fields": {
+            "name": "Laboratory",
+            "permissions": []
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 2,
+        "fields": {
+            "username": "warehouse",
+            "first_name": "Иван",
+            "last_name": "Складов",
+            "email": "warehouse@metalqms.com",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2024-01-01T00:00:00Z",
+            "groups": [1],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 3,
+        "fields": {
+            "username": "qc_inspector", 
+            "first_name": "Петр",
+            "last_name": "Контролев",
+            "email": "qc@metalqms.com",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2024-01-01T00:00:00Z",
+            "groups": [2],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 4,
+        "fields": {
+            "username": "lab_technician",
+            "first_name": "Мария", 
+            "last_name": "Лабораторова",
+            "email": "lab@metalqms.com",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2024-01-01T00:00:00Z",
+            "groups": [3],
+            "user_permissions": []
+        }
+    }
+]
